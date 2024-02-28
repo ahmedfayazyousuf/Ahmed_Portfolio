@@ -88,12 +88,12 @@
 						<div class="image-wrapper"data-tilt data-tilt-max="10">
 							<ul class="hero-facts">
 								<li>
-									<p>5K<span>+</span></p>
+									<p>70<span>+</span></p>
 									<h4>Total <br>Projects</h4>
 								</li>
 								<li>
-									<p>200<span>+</span></p>
-									<h4>Worldwide <br>Clients</h4>
+									<p>5<span>+</span></p>
+									<h4>Years <br>Experience</h4>
 								</li>
 								
 							</ul>
@@ -238,7 +238,7 @@
 							</ul> <!-- .personal-info -->
 						</div> <!-- .col-md-6 -->
 					</div> <!-- .personal-details -->
-					<a class="btn-main" href="#">Download CV</a>
+					<a class="btn-main" style="cursor: grab;" id="downloadBtn">Download CV</a>
 				</div>
 			</div> <!-- .row -->
 		</div> <!-- .container -->
@@ -1434,28 +1434,28 @@
 		   						<input type="text" class="form-control" id="inputName" placeholder="Name*" name="inputName" required>
 	   						</div>
 	   					</div>
-	   					<div class="col-md-6">
 
+	   					<div class="col-md-6">
 	   						<div class="input-group mb-3">
 								<label for="inputEmail" class="form-label visually-hidden">Email</label>
 		   						<input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email*" required>
 	   						</div>
-   						
 						</div> 
+
 						<div class="col-md-12">
 							<label for="inputMessage" class="form-label visually-hidden">Message</label>
 	   						<textarea class="form-control mb-3" id="inputMessage" name="inputMessage" placeholder="Your message here*" required></textarea>
 	   						<button type="submit" class="btn btn-main" name="submit">Send Message</button>
 						</div>
-					</form> <!-- .row -->
+					</form>
 				</div>
-			</div> <!-- .row -->
-		</div> <!-- .container -->
+			</div> 
+		</div> 
 		<div class="design-elements">
 			<img class="de-contact-1 elem-updown" src="image/design-elements/contact-element-1.png" alt="contact element 1">
 			<img class="de-contact-2 elem-updown" src="image/design-elements/contact-element-2.png" alt="contact element 2">
-		</div> <!-- .design-elements -->
-	</section> <!-- .contact-section -->
+		</div>
+	</section>
 
 	<!-- SITE FOOTER -->
 	<footer class="site-footer" id="site-footer">
@@ -1490,6 +1490,28 @@
 			</div> <!-- .footer-bottom -->
 		</div> <!-- .container -->
 	</footer> <!-- .site-footer -->
+
+	<script>
+		document.getElementById('downloadBtn').addEventListener('click', function() {
+		  // Replace 'AhmedCV.pdf' with the actual name of your PDF file
+		  var pdfFileName = 'AhmedCV.pdf';
+		  
+		  // Create a link element
+		  var link = document.createElement('a');
+		  link.href = pdfFileName;
+		  link.download = pdfFileName;
+		  
+		  // Append the link to the document
+		  document.body.appendChild(link);
+		  
+		  // Trigger the click event on the link
+		  link.click();
+		  
+		  // Remove the link from the document
+		  document.body.removeChild(link);
+		});
+		</script>
+
 
 <script src="js/jquery.js"></script>
 <script src="js/popper.min.js"></script>
