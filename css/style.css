@@ -105,7 +105,7 @@
   text-transform: uppercase;
 }
 .btn-main:hover {
-  background: #bf2902;
+  background: #00245e;
   color: #fff;
 }
 .btn-ghost {
@@ -218,7 +218,7 @@ a {
   transition: 0.3s;
 }
 a:hover {
-  color: #f23402;
+  color: #00245e;
 }
 p:last-of-type {
   margin-bottom: 0;
