@@ -204,9 +204,13 @@
 /***********************************************************
   3. General Style 
 ************************************************************/
+@font-face{
+  font-family: myFont;
+  src:url('./fonts/Garet-Book.otf');
+}
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
+  font-family: myFont;
+  font-size: 16px;
   color: #615978;
 }
 body.dark-mode {
@@ -456,7 +460,7 @@ h6 {
 }
 .hero-area .de-hero-5 {
   left: 10%;
-  bottom: 18%;
+  bottom: 40%;
   position: absolute;
 }
 .hero-area .btn-main {
@@ -979,7 +983,7 @@ h6 {
   margin-bottom: 12px;
 }
 .features-section h4 span {
-  font-family: 'Open Sans', sans-serif;
+  font-family: myFont;
   color: #615978;
   font-size: 70%;
   float: right;
@@ -1071,7 +1075,7 @@ h6 {
   display: block;
   margin-top: 8px;
   font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: myFont;
   color: #948daa;
 }
 .testimonial-section .quote-icon {
@@ -1134,7 +1138,7 @@ h6 {
 }
 .blog-section .post-meta li a {
   color: #fff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: myFont;
   font-weight: normal;
   text-transform: initial;
   transition: 0.3s;
@@ -1405,7 +1409,7 @@ h6 {
   font-size: 24px;
 }
 .contact-section a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: myFont;
   color: #615978;
   text-transform: initial;
   transition: 0.3s;
@@ -1585,7 +1589,7 @@ h6 {
   margin-bottom: 0;
 }
 .site-footer .footer-bottom ul a {
-  font-family: 'Open Sans', sans-serif;
+  font-family: myFont;
   color: #b0aac0;
   text-transform: capitalize;
   font-size: 16px;
@@ -1721,7 +1725,7 @@ h6 {
     right: 2%;
   }
   .hero-area .de-hero-5 {
-    bottom: 12%;
+    bottom: 23%;
   }
 }
 /* Max-width: 1399px */
